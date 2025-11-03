@@ -1,0 +1,7 @@
+pexp(q=0.5, rate=4, lower.tail=FALSE)
+pexp(q=1/3, rate=4)
+pexp(q=4/3, rate=4)-pexp(q=2/3, rate=4)
+qexp(p=0.2, rate=4, lower.tail = FALSE)
+czas<-seq(0.00, 3.00, 0.01)
+pstwo<-dexp(x=czas, rate=4)
+plot(x=czas, y=pstwo, type="l")
