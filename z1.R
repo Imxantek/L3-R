@@ -1,6 +1,10 @@
-dbinom(x=5, size=6, prob=0.5)
-pbinom(q=2, size=6, prob=0.5, lower.tail=FALSE)
-pbinom(q=4, size=6, prob=0.5)-pbinom(q=1, size=6, prob=0.5)
+cat("Podpunkt 1\n")
+print(dbinom(x=5, size=6, prob=0.5))
+cat("\nPodpunkt 2\n")
+print(pbinom(q=2, size=6, prob=0.5, lower.tail=FALSE))
+cat("\nPodpunkt 3\n")
+print(pbinom(q=4, size=6, prob=0.5)-pbinom(q=1, size=6, prob=0.5))
+cat("\nPodpunkt 4\n")
 ilosc_rzutow<-0:6
 pstwo<-dbinom(x=ilosc_rzutow, size=6, prob=0.5)
 plot(x=ilosc_rzutow, y=pstwo, type="h")
